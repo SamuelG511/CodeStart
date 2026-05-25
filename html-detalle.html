@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Construcción HTML | CodeStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<nav class="menu-navegacion">
+    <div class="logo">Code<span>Start</span></div>
+    <div class="menu-enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="Lenguajes.html">Lenguajes</a>
+        <a href="contacto.html" class="boton-azul">Inscribirme</a>
+    </div>
+</nav>
+
+<header class="cabecera-principal">
+    <div class="cabecera-contenido">
+        <h1 class="cabecera-titulo">Cómo se construyó <span>CodeStart</span></h1>
+        <p class="cabecera-subtitulo">La guía técnica detrás de esta web: HTML semántico, arquitectura CSS y decisiones de diseño reales.</p>
+    </div>
+</header>
+
+<main class="contenedor-web">
+
+    <section class="tarjeta-blanca">
+        <div class="fila-flexible">
+            <div class="columna-texto">
+                <span class="badge">🏗️ Guía Técnica</span>
+                <h2 class="titulo-seccion">¿Cómo se construyó CodeStart?</h2>
+                <p class="texto-resaltado">De un bloc de notas a una web profesional en 3 niveles.</p>
+                <p class="texto-normal">Para que esta página pasara de ser un archivo vacío a una web completa, seguimos una arquitectura clara: estructura HTML semántica, estilos CSS externos reutilizables y un sistema de clases eficiente.</p>
+            </div>
+            <div class="caja-gris">
+                <h4 class="titulo-pequeno">Los 3 niveles de construcción:</h4>
+                <ol class="lista-ordenada">
+                    <li><strong>Esqueleto HTML:</strong> La estructura semántica.</li>
+                    <li><strong>Sistema CSS:</strong> Las clases reutilizables.</li>
+                    <li><strong>Contenedor Maestro:</strong> El layout centralizado.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <div class="fondo-hsl-demo" style="background-color:hsla(263,69%,42%,0.08); border-left-color:#7c3aed;">
+        <div class="fila-flexible" style="justify-content:space-around; text-align:center; flex-wrap:wrap; gap:20px;">
+            <div><p class="texto-resaltado" style="font-size:2rem;">1 CSS</p><p class="texto-normal">Archivo para toda la web</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">11 Cap</p><p class="texto-normal">Capítulos cubiertos</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">0 JS</p><p class="texto-normal">Solo HTML y CSS puro</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">100%</p><p class="texto-normal">Reutilizable y escalable</p></div>
+        </div>
+    </div>
+
+    <section class="seccion-gris">
+        <h2 class="titulo-centrado">La arquitectura en 3 pasos</h2>
+        <div class="cuadros-grid">
+            <div class="cuadro-paso"><span class="paso-numero">01</span><h3>HTML Semántico</h3><p>Cada etiqueta tiene un propósito. nav, header, main, section y footer estructuran el contenido con significado real.</p></div>
+            <div class="cuadro-paso"><span class="paso-numero">02</span><h3>Sistema de Clases CSS</h3><p>En lugar de estilar cada elemento, creamos moldes reutilizables que aplican el mismo diseño en toda la web.</p></div>
+            <div class="cuadro-paso"><span class="paso-numero">03</span><h3>Contenedor Maestro</h3><p>Un max-width con margin auto centraliza todo el contenido y lo hace elegante en cualquier pantalla.</p></div>
+        </div>
+    </section>
+
+    <section class="tarjeta-blanca">
+        <h2 class="titulo-seccion">¿Cómo se construyó CodeStart? (Guía Técnica)</h2>
+        <p class="texto-normal">Para que esta página pasara de un bloc de notas a una web "Plus", seguimos una arquitectura de tres niveles:</p>
+
+        <div class="caja-leccion">
+            <h4>Nivel 1: El Esqueleto Semántico</h4>
+            <p class="texto-normal">No usamos etiquetas al azar. La estructura real es esta:</p>
+            <ul class="lista-explicativa">
+                <li><strong>nav:</strong> El contenedor del menú. Vital para la navegación.</li>
+                <li><strong>&lt;header&gt;:</strong> Donde vive el título impactante. Solo hay uno por página.</li>
+                <li><strong>&lt;main&gt;:</strong> La zona donde ocurre el contenido principal.</li>
+                <li><strong>&lt;section&gt;:</strong> Los bloques que dividen el contenido por tema.</li>
+                <li><strong>&lt;footer&gt;:</strong> Información de cierre y navegación secundaria.</li>
+            </ul>
+<pre>
+&lt;!-- Estructura semántica de CodeStart --&gt;
+&lt;nav class="menu-navegacion"&gt;...&lt;/nav&gt;
+&lt;header class="cabecera-principal"&gt;...&lt;/header&gt;
+&lt;main class="contenedor-web"&gt;
+    &lt;section class="tarjeta-blanca"&gt;...&lt;/section&gt;
+    &lt;section class="seccion-gris"&gt;...&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer class="pie-pagina"&gt;...&lt;/footer&gt;
+</pre>
+        </div>
+
+        <div class="caja-leccion">
+            <h4>Nivel 2: El Sistema de Clases (CSS)</h4>
+            <p class="texto-normal">El secreto profesional fue <strong>reutilizar</strong>. En lugar de darle estilo a cada elemento, creamos moldes:</p>
+<pre>
+/* El molde de las tarjetas blancas */
+.tarjeta-blanca {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+</pre>
+            <ul class="lista-explicativa">
+                <li><strong>background:</strong> Color de fondo con keyword "white".</li>
+                <li><strong>padding:</strong> Relleno interno con shorthand de 1 valor.</li>
+                <li><strong>border-radius:</strong> Esquinas redondeadas.</li>
+                <li><strong>box-shadow:</strong> Sombra con rgba para profundidad sutil.</li>
+            </ul>
+            <p class="texto-pequeno">¿Por qué así? Porque con class="tarjeta-blanca" obtienes diseño instantáneo en cualquier sección nueva.</p>
+        </div>
+
+        <div class="caja-leccion">
+            <h4>Nivel 3: El Contenedor Maestro</h4>
+            <p class="texto-normal">Todo el contenido vive dentro de <code>.contenedor-web</code>:</p>
+<pre>
+.contenedor-web {
+    max-width: 1100px;       /* Limita el ancho máximo */
+    margin: -40px auto 60px; /* Centrado + margen negativo */
+    padding: 0 20px;         /* Espacio lateral en móviles */
+}
+</pre>
+            <ul class="lista-explicativa">
+                <li><strong>max-width:</strong> Evita que el contenido se estire en pantallas grandes.</li>
+                <li><strong>margin: auto:</strong> Centra el bloque horizontalmente.</li>
+                <li><strong>margin negativo:</strong> Sube el contenido sobre la cabecera para el efecto visual.</li>
+            </ul>
+        </div>
+
+        <a href="Lenguajes.html" class="boton-azul" style="display:inline-block; margin-top:20px;">¡Entendido! Ver otros lenguajes →</a>
+    </section>
+
+    <section class="tarjeta-blanca">
+        <div class="sobre-nosotros">
+            <h2 class="titulo-seccion">Resumen para el Programador</h2>
+            <p class="texto-normal">Hicimos esta página separando el <strong>Contenido</strong> (HTML) del <strong>Estilo</strong> (CSS). Si mañana quieres cambiar el color del logo, cambias una línea en el CSS y toda la web se actualiza. Eso es eficiencia real.</p>
+            <div class="bloques-info">
+                <div class="bloque"><h4>Separación de Responsabilidades</h4><p>HTML = estructura. CSS = presentación. Nunca mezclados en el mismo archivo.</p></div>
+                <div class="bloque"><h4>Clases Reutilizables</h4><p>Un sistema de clases bien diseñado escala sin duplicar código.</p></div>
+                <div class="bloque"><h4>Hojas Externas</h4><p>Un solo style.css para todas las páginas. El navegador lo cachea y carga más rápido.</p></div>
+            </div>
+            <p class="texto-final">La diferencia entre un sitio web amateur y uno profesional no está en la complejidad — está en la organización y la consistencia.</p>
+        </div>
+    </section>
+
+    <section class="seccion-gris" style="text-align:center;">
+        <h2 class="titulo-centrado">¿Listo para construir tu propia web?</h2>
+        <p class="texto-normal" style="max-width:600px; margin:0 auto 30px;">Aprende HTML y CSS desde cero con el mismo sistema que usamos para construir CodeStart.</p>
+        <a href="contacto.html" class="boton-azul" style="font-size:1.1rem; padding:15px 35px;">Inscribirme al curso de HTML/CSS →</a>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <div class="pie-contenido">
+        <p><strong>CodeStart 2026</strong> | El inicio de tu carrera profesional.</p>
+        <p style="margin-top:10px; opacity:0.6;">
+            <a href="index.html" style="color:white; margin:0 10px;">Inicio</a>
+            <a href="Lenguajes.html" style="color:white; margin:0 10px;">Lenguajes</a>
+            <a href="contacto.html" style="color:white; margin:0 10px;">Contacto</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

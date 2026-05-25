@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Python | CodeStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<nav class="menu-navegacion">
+    <div class="logo">Code<span>Start</span></div>
+    <div class="menu-enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="Lenguajes.html">Lenguajes</a>
+        <a href="contacto.html" class="boton-azul">Inscribirme</a>
+    </div>
+</nav>
+
+<header class="cabecera-principal">
+    <div class="cabecera-contenido">
+        <h1 class="cabecera-titulo">Python desde <span>Cero</span></h1>
+        <p class="cabecera-subtitulo">El lenguaje de la IA, el Data Science y la automatización. Simple, potente y demandado.</p>
+    </div>
+</header>
+
+<main class="contenedor-web">
+
+    <section class="tarjeta-blanca">
+        <div class="fila-flexible">
+            <div class="columna-texto">
+                <span class="badge">🐍 Guía Técnica</span>
+                <h2 class="titulo-seccion">¿Por qué Python?</h2>
+                <p class="texto-resaltado">Sintaxis limpia, cercana al inglés y perfecta para aprender a programar.</p>
+                <p class="texto-normal">Python es uno de los lenguajes más usados del mundo. No necesitas declarar tipos: él los detecta solo. Ideal para principiantes y también para proyectos de IA, automatización y análisis de datos.</p>
+            </div>
+            <div class="caja-gris">
+                <h4 class="titulo-pequeno">Python se usa en:</h4>
+                <ol class="lista-ordenada">
+                    <li><strong>Inteligencia Artificial:</strong> TensorFlow, PyTorch.</li>
+                    <li><strong>Data Science:</strong> Pandas, NumPy, Matplotlib.</li>
+                    <li><strong>Web Backend:</strong> Django, Flask, FastAPI.</li>
+                    <li><strong>Automatización:</strong> Scripts, bots, scraping.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <div class="fondo-hsl-demo" style="background-color:hsla(142,72%,29%,0.08); border-left-color:#16a34a;">
+        <div class="fila-flexible" style="justify-content:space-around; text-align:center; flex-wrap:wrap; gap:20px;">
+            <div><p class="texto-resaltado" style="font-size:2rem;">92%</p><p class="texto-normal">Proyectos IA usan Python</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">#1</p><p class="texto-normal">Lenguaje más popular 2025</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">Simple</p><p class="texto-normal">Sintaxis legible como inglés</p></div>
+            <div><p class="texto-resaltado" style="font-size:2rem;">+500k</p><p class="texto-normal">Librerías disponibles</p></div>
+        </div>
+    </div>
+
+    <section class="seccion-gris">
+        <h2 class="titulo-centrado">Tu ruta de aprendizaje en Python</h2>
+        <div class="cuadros-grid">
+            <div class="cuadro-paso"><span class="paso-numero">01</span><h3>Fundamentos</h3><p>Variables, tipos, operadores, condicionales y bucles. La base de toda lógica de programación.</p></div>
+            <div class="cuadro-paso"><span class="paso-numero">02</span><h3>Funciones y Estructuras</h3><p>Funciones, listas, diccionarios, sets y manejo de archivos.</p></div>
+            <div class="cuadro-paso"><span class="paso-numero">03</span><h3>Python Profesional</h3><p>POO, manejo de errores, APIs con Flask/FastAPI y librerías de datos.</p></div>
+        </div>
+    </section>
+
+    <section class="tarjeta-blanca">
+        <h2 class="titulo-seccion">Python desde cero (Guía Técnica)</h2>
+        <p class="texto-normal">Con estas 4 lecciones ya puedes escribir programas que guardan datos, operan con ellos, toman decisiones y se comunican con el usuario.</p>
+
+        <div class="caja-leccion">
+            <h4>Nivel 1: Variables y Tipos de Datos</h4>
+            <p class="texto-normal">En Python no necesitas declarar el tipo, él lo detecta solo:</p>
+            <ul class="lista-explicativa">
+                <li><strong>int:</strong> Números enteros. Ej: <code>edad = 25</code></li>
+                <li><strong>float:</strong> Números decimales. Ej: <code>precio = 9.99</code></li>
+                <li><strong>str:</strong> Texto entre comillas. Ej: <code>nombre = "Ana"</code></li>
+                <li><strong>bool:</strong> Verdadero o falso. Ej: <code>activo = True</code></li>
+            </ul>
+<pre>
+nombre  = "CodeStart"
+version = 1
+precio  = 9.99
+activo  = True
+
+print(nombre)          # CodeStart
+print(type(version))   # &lt;class 'int'&gt;
+</pre>
+        </div>
+
+        <div class="caja-leccion">
+            <h4>Nivel 2: Operadores</h4>
+            <p class="texto-normal">Python maneja operadores aritméticos, de comparación y lógicos:</p>
+<pre>
+# Aritméticos
+suma     = 10 + 5    # 15
+division = 10 / 4    # 2.5
+potencia = 2 ** 8    # 256
+modulo   = 10 % 3    # 1
+
+# Comparación (devuelven True o False)
+10 > 5    # True
+10 == 10  # True
+
+# Lógicos
+True and False  # False
+True or  False  # True
+not True        # False
+</pre>
+        </div>
+
+        <div class="caja-leccion">
+            <h4>Nivel 3: Condicionales</h4>
+            <p class="texto-normal">Permiten que el programa tome decisiones según una condición:</p>
+<pre>
+edad = 18
+
+if edad >= 18:
+    print("Eres mayor de edad")
+elif edad >= 13:
+    print("Eres adolescente")
+else:
+    print("Eres menor de edad")
+</pre>
+            <ul class="lista-explicativa">
+                <li><strong>if:</strong> Se ejecuta si la condición es verdadera.</li>
+                <li><strong>elif:</strong> Se evalúa si el if anterior fue falso.</li>
+                <li><strong>else:</strong> Se ejecuta si ninguna condición se cumplió.</li>
+            </ul>
+        </div>
+
+        <div class="caja-leccion">
+            <h4>Nivel 4: Input del usuario</h4>
+            <p class="texto-normal">Python puede pedirle datos al usuario con <code>input()</code>:</p>
+<pre>
+nombre = input("¿Cómo te llamas? ")
+print("Hola,", nombre)
+
+edad = int(input("¿Cuántos años tienes? "))
+
+if edad >= 18:
+    print("Puedes acceder al curso avanzado")
+else:
+    print("Te recomendamos el curso básico")
+</pre>
+            <p class="texto-pequeno"><strong>Ojo:</strong> input() siempre devuelve texto. Si necesitas un número, convierte con int() o float().</p>
+        </div>
+
+        <a href="Lenguajes.html" class="boton-azul" style="display:inline-block; margin-top:20px;">¡Entendido! Ver otros lenguajes →</a>
+    </section>
+
+    <section class="tarjeta-blanca">
+        <div class="sobre-nosotros">
+            <h2 class="titulo-seccion">Resumen para el Programador</h2>
+            <p class="texto-normal">Con estos 4 niveles ya tienes la base real de cualquier aplicación: guardar datos, operar con ellos, tomar decisiones y comunicarte con el usuario.</p>
+            <div class="bloques-info">
+                <div class="bloque"><h4>Sin Tipos Explícitos</h4><p>Python infiere el tipo solo. Código más limpio y rápido de escribir.</p></div>
+                <div class="bloque"><h4>Indentación Obligatoria</h4><p>Los bloques se definen con espacios, no con llaves. Fuerza código legible.</p></div>
+                <div class="bloque"><h4>Ecosistema Enorme</h4><p>pip install y tienes acceso a +500,000 librerías para cualquier necesidad.</p></div>
+            </div>
+            <p class="texto-final">Python no es un lenguaje de principiantes — es el lenguaje que eligen los expertos por su potencia y claridad.</p>
+        </div>
+    </section>
+
+    <section class="seccion-gris" style="text-align:center;">
+        <h2 class="titulo-centrado">¿Listo para dominar Python?</h2>
+        <p class="texto-normal" style="max-width:600px; margin:0 auto 30px;">Desde variables hasta inteligencia artificial. Tu camino empieza aquí.</p>
+        <a href="contacto.html" class="boton-azul" style="font-size:1.1rem; padding:15px 35px;">Inscribirme al curso de Python →</a>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <div class="pie-contenido">
+        <p><strong>CodeStart 2026</strong> | El inicio de tu carrera profesional.</p>
+        <p style="margin-top:10px; opacity:0.6;">
+            <a href="index.html" style="color:white; margin:0 10px;">Inicio</a>
+            <a href="Lenguajes.html" style="color:white; margin:0 10px;">Lenguajes</a>
+            <a href="contacto.html" style="color:white; margin:0 10px;">Contacto</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

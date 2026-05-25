@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Java | CodeStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVEGACIÓN -->
+<nav class="menu-navegacion">
+    <div class="logo">Code<span>Start</span></div>
+    <div class="menu-enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="Lenguajes.html">Lenguajes</a>
+        <a href="contacto.html" class="boton-azul">Inscribirme</a>
+    </div>
+</nav>
+
+<!-- CABECERA -->
+<header class="cabecera-principal">
+    <div class="cabecera-contenido">
+        <h1 class="cabecera-titulo">Dominando <span>Java</span></h1>
+        <p class="cabecera-subtitulo">El lenguaje estándar para aplicaciones empresariales, backend robusto y desarrollo Android.</p>
+    </div>
+</header>
+
+<main class="contenedor-web">
+
+    <!-- SECCIÓN 1 — ¿Qué es Java? -->
+    <section class="tarjeta-blanca">
+        <div class="fila-flexible">
+            <div class="columna-texto">
+                <h2 class="titulo-seccion">¿Qué es Java?</h2>
+                <p class="texto-resaltado">"Escribe una vez, ejecútalo en cualquier lugar." — Filosofía Java</p>
+                <p class="texto-normal">Java es un lenguaje de programación orientado a objetos, fuertemente tipado y de propósito general. Fue creado por Sun Microsystems en 1995 y hoy es mantenido por Oracle. Es el lenguaje más usado en entornos empresariales a nivel mundial.</p>
+                <p class="texto-normal">Gracias a la <strong>JVM (Java Virtual Machine)</strong>, un programa compilado en Java corre en cualquier sistema operativo sin necesidad de recompilarse. Esto lo hace ideal para sistemas distribuidos y aplicaciones de gran escala.</p>
+            </div>
+            <div class="caja-gris">
+                <h4 class="titulo-pequeno">¿Para qué se usa Java?</h4>
+                <ol class="lista-ordenada">
+                    <li><strong>Backend empresarial:</strong> Bancos, aseguradoras, ERP.</li>
+                    <li><strong>Android:</strong> Base histórica del desarrollo móvil.</li>
+                    <li><strong>Microservicios:</strong> Spring Boot, Quarkus.</li>
+                    <li><strong>Big Data:</strong> Hadoop y herramientas de procesamiento.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2 — DEMANDA LABORAL -->
+    <div class="fondo-hsl-demo">
+        <div class="fila-flexible" style="justify-content: space-around; text-align: center;">
+            <div>
+                <p class="texto-resaltado" style="font-size: 2rem;">#1</p>
+                <p class="texto-normal">Lenguaje en banca y finanzas</p>
+            </div>
+            <div>
+                <p class="texto-resaltado" style="font-size: 2rem;">3B+</p>
+                <p class="texto-normal">Dispositivos ejecutan Java</p>
+            </div>
+            <div>
+                <p class="texto-resaltado" style="font-size: 2rem;">28 años</p>
+                <p class="texto-normal">De relevancia continua</p>
+            </div>
+            <div>
+                <p class="texto-resaltado" style="font-size: 2rem;">$85k+</p>
+                <p class="texto-normal">Salario promedio anual (USD)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 3 — RUTA DE APRENDIZAJE -->
+    <section class="seccion-gris">
+        <h2 class="titulo-centrado">Tu ruta de aprendizaje en Java</h2>
+        <div class="cuadros-grid">
+            <div class="cuadro-paso">
+                <span class="paso-numero">01</span>
+                <h3>Fundamentos del Lenguaje</h3>
+                <p>Variables, tipos primitivos, operadores, estructuras de control (if, for, while) y métodos. La base sólida que todo Java developer necesita.</p>
+            </div>
+            <div class="cuadro-paso">
+                <span class="paso-numero">02</span>
+                <h3>Programación Orientada a Objetos</h3>
+                <p>Clases, objetos, herencia, polimorfismo, encapsulamiento e interfaces. El corazón del lenguaje y de todo sistema empresarial en Java.</p>
+            </div>
+            <div class="cuadro-paso">
+                <span class="paso-numero">03</span>
+                <h3>Java Profesional</h3>
+                <p>Collections, manejo de excepciones, streams, lambdas y Spring Boot. Las herramientas que usan los equipos de desarrollo reales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4 — LECCIONES DE CÓDIGO -->
+    <section class="tarjeta-blanca">
+        <h2 class="titulo-seccion">Código que aprenderás a escribir</h2>
+        <p class="texto-normal">Cada lección en CodeStart está orientada a construir algo real. Aquí un vistazo de lo que verás en el track de Java.</p>
+
+        <!-- Lección 1 -->
+        <div class="caja-leccion">
+            <h4>Lección 1: Hola Mundo y estructura básica</h4>
+            <ul class="lista-explicativa">
+                <li><strong>class</strong> — Todo en Java vive dentro de una clase.</li>
+                <li><strong>main</strong> — Punto de entrada de cualquier programa.</li>
+                <li><strong>System.out.println</strong> — Imprime texto en consola.</li>
+            </ul>
+<pre>
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, CodeStart!");
+        System.out.println("Bienvenido a Java 2026.");
+    }
+}
+</pre>
+        </div>
+
+        <!-- Lección 2 -->
+        <div class="caja-leccion">
+            <h4>Lección 2: Variables y tipos de datos</h4>
+            <ul class="lista-explicativa">
+                <li><strong>int</strong> — Números enteros: edad, cantidad, índices.</li>
+                <li><strong>double</strong> — Números decimales: precios, temperaturas.</li>
+                <li><strong>String</strong> — Cadenas de texto (objeto en Java).</li>
+                <li><strong>boolean</strong> — Verdadero o falso para lógica.</li>
+            </ul>
+<pre>
+public class Variables {
+    public static void main(String[] args) {
+        int edad = 22;
+        double precio = 199.99;
+        String nombre = "CodeStart";
+        boolean activo = true;
+
+        System.out.println(nombre + " v" + edad);
+        System.out.println("Precio: $" + precio);
+        System.out.println("¿Activo? " + activo);
+    }
+}
+</pre>
+        </div>
+
+        <!-- Lección 3 -->
+        <div class="caja-leccion">
+            <h4>Lección 3: Tu primera Clase y Objeto (POO)</h4>
+            <ul class="lista-explicativa">
+                <li><strong>Clase</strong> — Molde que define atributos y comportamiento.</li>
+                <li><strong>Objeto</strong> — Instancia concreta de una clase.</li>
+                <li><strong>Constructor</strong> — Método especial para crear objetos.</li>
+            </ul>
+<pre>
+public class Estudiante {
+    String nombre;
+    int nivel;
+
+    // Constructor
+    Estudiante(String nombre, int nivel) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+    }
+
+    void presentarse() {
+        System.out.println("Hola, soy " + nombre
+            + " - Nivel " + nivel);
+    }
+
+    public static void main(String[] args) {
+        Estudiante dev = new Estudiante("Ana", 3);
+        dev.presentarse();
+        // Output: Hola, soy Ana - Nivel 3
+    }
+}
+</pre>
+            <p class="texto-pequeno">Este patrón es la base de todo sistema Java empresarial. Entiéndelo bien y el resto fluye.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5 — SOBRE NOSOTROS / MISIÓN -->
+    <section id="nosotros" class="tarjeta-blanca">
+        <div class="sobre-nosotros">
+            <h2 class="titulo-seccion">¿Por qué aprender Java en CodeStart?</h2>
+            <p class="texto-normal">No enseñamos Java de libro. Enseñamos Java como lo usan los equipos que construyen sistemas bancarios, plataformas de e-commerce y aplicaciones de millones de usuarios.</p>
+
+            <div class="bloques-info">
+                <div class="bloque">
+                    <h4>Proyectos Reales</h4>
+                    <p>Construirás una API REST con Spring Boot conectada a base de datos desde la semana 4. Sin ejercicios de relleno.</p>
+                </div>
+                <div class="bloque">
+                    <h4>Mentoría Técnica</h4>
+                    <p>Cada módulo incluye revisiones de código en vivo donde nuestros instructores señalan exactamente cómo mejorar tu estilo.</p>
+                </div>
+                <div class="bloque">
+                    <h4>Preparación Laboral</h4>
+                    <p>Terminas con un portafolio de proyectos listos para mostrar en entrevistas técnicas en empresas reales.</p>
+                </div>
+            </div>
+
+            <p class="texto-final">
+                Java no es solo un lenguaje — es una puerta de entrada al mundo del desarrollo empresarial. En CodeStart te damos las llaves.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="seccion-gris" style="text-align: center;">
+        <h2 class="titulo-centrado">¿Listo para dominar Java?</h2>
+        <p class="texto-normal" style="max-width: 600px; margin: 0 auto 30px;">
+            Únete al track de Java y empieza a construir aplicaciones reales desde la primera semana. Sin requisitos previos.
+        </p>
+        <a href="contacto.html" class="boton-azul" style="font-size: 1.1rem; padding: 15px 35px;">
+            Inscribirme al curso de Java →
+        </a>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <div class="pie-contenido">
+        <p><strong>CodeStart 2026</strong> | El inicio de tu carrera profesional.</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            <a href="index.html" style="color: white; margin: 0 10px;">Inicio</a>
+            <a href="Lenguajes.html" style="color: white; margin: 0 10px;">Lenguajes</a>
+            <a href="contacto.html" style="color: white; margin: 0 10px;">Contacto</a>
+        </p>
+        <p style="margin-top: 15px;"><small>Actualizado el: <time datetime="2026-02-18">18 de Febrero, 2026</time></small></p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario | CodeStart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor-web">
+        <section class="tarjeta-blanca">
+            <h2>Formulario de contacto</h2>
+
+            <form action="/procesar" method="POST" class="formulario-contacto">
+
+                <div class="grupo-campo">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Usuario_Nombre" placeholder="Nombre Completo" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="last_name" placeholder="Apellido">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Email">Correo electrónico</label>
+                    <input type="email" id="Email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Password">Contraseña</label>
+                    <input type="password" id="Password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" id="Telefono" name="telefono" placeholder="+57 300 000 0000">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="FechaNac">Fecha de nacimiento</label>
+                    <input type="date" id="FechaNac" name="fecha_nacimiento">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Razon">¿Por qué deseas aprender a programar?</label>
+                    <textarea id="Razon" name="Razon" placeholder="Cuéntanos un poco sobre ti..." rows="4"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="Modalidad">Modalidad preferida</label>
+                    <select id="Modalidad" name="modalidad">
+                        <option value="">-- Selecciona --</option>
+                        <option value="online">Online</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo grupo-checks">
+                    <span class="label-grupo">Áreas de interés</span>
+                    <label class="opcion-check">
+                        <input type="checkbox" name="areas" value="frontend"> Frontend
+                    </label>
+                    <label class="opcion-check">
+                        <input type="checkbox" name="areas" value="backend"> Backend
+                    </label>
+                    <label class="opcion-check">
+                        <input type="checkbox" name="areas" value="datos"> Ciencia de datos
+                    </label>
+                </div>
+
+                <div class="grupo-campo grupo-checks">
+                    <span class="label-grupo">Jornada disponible</span>
+                    <label class="opcion-check">
+                        <input type="radio" name="jornada" value="manana"> Mañana
+                    </label>
+                    <label class="opcion-check">
+                        <input type="radio" name="jornada" value="tarde"> Tarde
+                    </label>
+                    <label class="opcion-check">
+                        <input type="radio" name="jornada" value="noche"> Noche
+                    </label>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="CV">Sube tu CV</label>
+                    <input type="file" id="CV" name="cv" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="grupo-campo grupo-terminos">
+                    <label class="opcion-check">
+                        <input type="checkbox" name="terminos" required>
+                        Acepto los <a href="/terminos">términos y condiciones</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="boton-azul">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
