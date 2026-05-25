@@ -10,19 +10,19 @@ async function obtenerCita() {
     </p>`;
 
   try {
-    const respuesta = await fetch('https://dummyjson.com/quotes/random');
+    const respuesta = await fetch('https://zenquotes.io/api/random');
     const datos = await respuesta.json();
 
     caja.innerHTML = `
       <div class="caja-gris" style="max-width: 650px; margin: 0 auto; text-align: left;">
         <p class="texto-resaltado" style="font-style: italic; font-size: 1.15rem;">
-          "${datos.quote}"
+          "${datos[0].q}"
         </p>
         <p class="texto-normal" style="margin-top: 12px;">
-          — <strong>${datos.author}</strong>
+          — <strong>${datos[0].a}</strong>
         </p>
         <p class="texto-pequeno" style="margin-top: 8px; opacity: 0.6;">
-          Fuente: DummyJSON API &nbsp;·&nbsp; datos.quote / datos.author
+          Fuente: ZenQuotes API &nbsp;·&nbsp; datos[0].q / datos[0].a
         </p>
       </div>`;
 
